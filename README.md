@@ -17,7 +17,7 @@ kdr-gym.netlify.app
 ![Home Page](./screenshot/home.png)
 ![Search Section](./screenshot/search.png)
 ![Results Section](./screenshot/results.png)
-![Details Section](./screenshot/details.png.png)
+![Details Section](./screenshot/details.png)
 ![Realated Excercises](./screenshot/related-excercises.png)
 ![Footer](./screenshot/footer.png)
 
