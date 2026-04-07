@@ -14,12 +14,12 @@ kdr-gym.netlify.app
 
 ## Screenshots
 
-![Home Page](./screenshots/home.png)
-![Search Section](./screenshots/search.png)
-![Results Section](./screenshots/results.png)
-![Details Section](./screenshots/details.png.png)
-![Realated Excercises](./screenshots/related-excercises.png)
-![Footer](./screenshots/footer.png)
+![Home Page](./screenshot/home.png)
+![Search Section](./screenshot/search.png)
+![Results Section](./screenshot/results.png)
+![Details Section](./screenshot/details.png.png)
+![Realated Excercises](./screenshot/related-excercises.png)
+![Footer](./screenshot/footer.png)
 
 ---
 
