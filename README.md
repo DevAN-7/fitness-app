@@ -39,7 +39,7 @@ kdr-gym.netlify.app
 - ReactJS
 - React router
 - Material UI
-- ExcerciseDB API
+- ExcerciseDB API (From RapidAPI)
 - Youtube API
 - JavaScript
 - HTML & CSS
