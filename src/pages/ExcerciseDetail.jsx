@@ -15,6 +15,8 @@ const ExcerciseDetail = () => {
   const [excerciseDetail, setExcerciseDetail] = useState({});
   const { id } = useParams();
   const [excerciseVideos, setExcerciseVideos] = useState([]);
+  const [targetMuscleExcercises, setTargetMuscleExcercises] = useState([]);
+  const [equipmentExcercises, setEquipmentExcercises] = useState([]);
 
   useEffect(() => {
     const fetchExcercieData = async () => {
@@ -33,6 +35,17 @@ const ExcerciseDetail = () => {
         youtubeOptions,
       );
       setExcerciseVideos(excerciseVideosData);
+
+      const targetMuscleExcercisesData = await fetchData(
+        `${excerciseDbUrl}/exercises/target/${excerciseDetailData.target}`,
+        excerciseOptions,
+      );
+      setTargetMuscleExcercises(targetMuscleExcercisesData);
+      const equipmentExcercisesData = await fetchData(
+        `${excerciseDbUrl}/exercises/equipment/${excerciseDetailData.equipment}`,
+        excerciseOptions,
+      );
+      setEquipmentExcercises(equipmentExcercisesData);
     };
 
     fetchExcercieData();
@@ -45,7 +58,10 @@ const ExcerciseDetail = () => {
         excerciseVideos={excerciseVideos.contents}
         name={excerciseDetail.name}
       />
-      <SimilarExcercises />
+      <SimilarExcercises
+        targetMuscleExcercises={targetMuscleExcercises}
+        equipmentExcercises={equipmentExcercises}
+      />
     </Box>
   );
 };

@@ -1,7 +1,19 @@
 import React from "react";
+import Logo from "../assets/images/Logo-1.png";
+import { Box, Stack, Typography } from "@mui/material";
 
 const Footer = () => {
-  return <div></div>;
+  return (
+    <Box mt="80px" bgcolor="#fff3f4">
+      <Stack gap="40px" alignItems="center" px="40px" pt="24px">
+        <img src={Logo} alt="logo" height="40px" width="200px" />
+
+        <Typography variant="h5" pb="40px" mt="20px">
+          Developed by Mr Auzair 💖
+        </Typography>
+      </Stack>
+    </Box>
+  );
 };
 
 export default Footer;
