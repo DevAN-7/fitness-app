@@ -6,12 +6,6 @@ Is a react web application which allows users to browse excercises and search fo
 
 ---
 
-## Live Demo
-
-kdr-gym.netlify.app
-
----
-
 ## Screenshots
 
 ![Home Page](./screenshot/home.png)
